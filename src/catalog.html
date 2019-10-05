@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML Academy, Nerds, NЁRDS DESIGN STUDIO,
+  студия, клиенты, магазин, макеты, макет, стоимость сайта, сетка, адаптивная,
+  фиксированная, резиновая, интернет-магазин">
+  <meta name="description" content="Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.">
+  <meta name="viewport" content="width=900">
+  <meta name="author" content="RHM">
+  <title>Nerds</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/popup1.js"></script>
+</head>
+
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__subwrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo.png" width="139" height="56" alt="Nerds">
+        </a>
+        <div class="page-header__nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="index.html">Студия</a></li>
+              <li class="nav__item"><a href="#">Клиенты</a></li>
+              <li class="nav__item   nav__item--active"><a href="#">Магазин</a></li>
+              <li class="nav__item"><a href="#map">Контакты</a></li>
+              <li class="nav__item  nav__item--cart"><a href="#">
+                  <svg class="nav__icon-svg  nav__icon-svg--cart">
+                    <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart-black2"></use>
+                  </svg>
+                  Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <h1 class="page-header__title">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
+
+
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <div class="page-main__column  page-main__column--left">
+        <aside class="filter">
+          <fieldset class="filter__group--range">
+            <legend class="filter__title">Стоимость:</legend>
+
+            <div class="range">
+              <div id="id66" class="range__wrapper">
+                <div id="id66b" class="range__between"></div>
+                <div id="id661" class="range__toggle range__toggle---min"></div>
+                <div id="id662" class="range__toggle range__toggle---max"></div>
+
+                <span class="range__span range__span--min">от</span><input id="id66i1" class="range__inpt range__inpt--min" type="text" min="0" max="20000">
+                <span class="range__span range__span--max">до</span><input id="id66i2" class="range__inpt range__inpt--max" type="text" min="0" max="20000">
+              </div>
+            </div>
+          </fieldset>
+
+          <form class="filter-form" action="#" method="post">
+            <fieldset class="filter__group">
+              <legend class="filter__title">Сетка:</legend>
+              <input class="filter__item" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label class="filter__label  filter__label--radio" for="adaptive">Адаптивная</label>
+
+              <input class="filter__item" type="radio" name="grid" id="fixed" value="fixed">
+              <label class="filter__label  filter__label--radio" for="fixed">Фиксированная</label>
+
+              <input class="filter__item" type="radio" name="grid" id="rubber" value="rubber">
+              <label class="filter__label  filter__label--radio" for="rubber">Резиновая</label>
+            </fieldset>
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Особенности:</legend>
+              <input class="filter__item" type="checkbox" name="slider" id="slider" checked>
+              <label class="filter__label  filter__label--checkbox" for="slider">Слайдер</label>
+
+              <input class="filter__item" type="checkbox" name="features" id="features">
+              <label class="filter__label  filter__label--checkbox" for="features">Блок преимуществ</label>
+
+              <input class="filter__item" type="checkbox" name="news" id="news" checked>
+              <label class="filter__label  filter__label--checkbox" for="news">Новости</label>
+
+              <input class="filter__item" type="checkbox" name="gallery" id="gallery">
+              <label class="filter__label  filter__label--checkbox" for="gallery">Галерея</label>
+
+              <input class="filter__item" type="checkbox" name="cart" id="cart">
+              <label class="filter__label  filter__label--checkbox" for="cart">Корзина</label>
+            </fieldset>
+            <button type="submit" class="filter__btn  btn  btn--gray">Показать</button>
+          </form>
+        </aside>
+      </div>
+
+
+      <div class="page-main__column page-main__column--right">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul class="catalog__sort">
+          <li class="catalog__sort-item">
+            Сортировать:
+          </li>
+          <li class="catalog__sort-item">
+            <a class="catalog__link" href="#">По цене</a>
+          </li>
+          <li class="catalog__sort-item">
+            <a class="catalog__link" href="#">По типу</a>
+          </li>
+          <li class="catalog__sort-item  catalog__sort-item--longmarg">
+            <a class="catalog__link" href="#">По функционалу</a>
+          </li>
+          <li class="catalog__sort-item  catalog__sort-item--shortmarg">
+            <a class="catalog__link  catalog__link--low" href="#"></a>
+          </li>
+          <li class="catalog__sort-item">
+            <a class="catalog__link  catalog__link--high" href="#"></a>
+          </li>
+        </ul>
+
+        <article class="catalog">
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-1.jpg" width="240" height="240" alt="Aviator">
+            <section class="product__item-block">
+              <h3 class="product__item-title">AVIATOR</h3>
+              <p class="product__item-descr">Одностраничный макет с авторским дизайном</p>
+              <button class="product__btn  btn">8000 Р.</button>
+            </section>
+          </section>
+
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-2.jpg" width="240" height="240" alt="Sunset">
+            <section class="product__item-block">
+              <h3 class="product__item-title">SUNSET</h3>
+              <p class="product__item-descr">Интернет-магазин с личным кабинетом</p>
+              <button class="product__btn  btn">10000 Р.</button>
+            </section>
+          </section>
+
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-3.jpg" width="240" height="240" alt="Forte">
+            <section class="product__item-block">
+              <h3 class="product__item-title">FORTE</h3>
+              <p class="product__item-descr">Отличный макет для личного блога</p>
+              <button class="product__btn  btn">5000 Р.</button>
+            </section>
+          </section>
+
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-4.jpg" width="240" height="240" alt="Modern organic thai">
+            <section class="product__item-block">
+              <h3 class="product__item-title">MODERN ORGANIC THAI</h3>
+              <p class="product__item-descr">Сайт для ресторана быстрого питания</p>
+              <button class="product__btn  btn">12000 Р.</button>
+            </section>
+          </section>
+
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-5.jpg" width="240" height="240" alt="Avenue">
+            <section class="product__item-block">
+              <h3 class="product__item-title">AVENUE</h3>
+              <p class="product__item-descr">Макет для блога о путешествиях</p>
+              <button class="product__btn  btn">8000 Р.</button>
+            </section>
+          </section>
+
+          <section class="catalog__item product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+              <a class="product__item-toggle" href="#"></a>
+            </div>
+            <img src="img/catalog-6.jpg" width="240" height="240" alt="Dovetail">
+            <section class="product__item-block">
+              <h3 class="product__item-title">DOVETAIL</h3>
+              <p class="product__item-descr">Интернет-магазин с галереей товаров</p>
+              <button class="product__btn  btn">14000 Р.</button>
+            </section>
+          </section>
+
+          <div class="paginator">
+            <a class="paginator__link paginator__link--current   btn  btn--gray" href="#">1</a>
+            <a class="paginator__link   btn  btn--gray" href="#2">2</a>
+            <a class="paginator__link   btn  btn--gray" href="#3">3</a>
+            <a class="paginator__link paginator__link--next btn  btn--gray" href="#next">СЛЕДУЮЩАЯ</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+
+
+   <footer class="page-footer">
+    <section class="map">
+      <div class="map__api" id="map"></div>
+      <div class="map__wrapper">
+        <div class="map__contacts">
+          <h5 class="map__title">Nёrds design studio</h5>
+          <p class="map__descr">
+            191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map__descr"> тел. +7 (812) 275-75-75</p>
+          <a class="map__btn btn btn--popup" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="page-footer__wrapper">
+      <section class="page-footer__social  social">
+        <a class="social__btn" href="#">В контакте
+          <svg class="social__icon-svg  social__icon-svg--vk">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
+        <a class="social__btn" href="#">Фейсбук
+          <svg class="social__icon-svg  social__icon-svg--fb">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="social__btn" href="#">Инстаграм
+          <svg class="social__icon-svg  social__icon-svg--inst">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </section>
+
+      <section class="page-footer__promo">
+        <h4 class="page-footer__title">Давайте дружить, это выгодно!</h4>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+
+
+  <div class="popup">
+    <button class="popup__btn popup__btn--close btn  btn--close" type="button">Закрыть</button>
+    <form class="popup-form" action="#" method="post">
+      <div class="popup__group  popup__group--name">
+        <label class="popup__label" for="name">Ваше имя:</label>
+        <input class="popup__field" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+
+      <div class="popup__group popup__group--email">
+        <label class="popup__label" for="email">Ваш e-mail:</label>
+        <input class="popup__field" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </div>
+
+      <div class="popup__group popup__group--message">
+        <label class="popup__label" for="message">Текст письма:</label>
+        <textarea class="popup__field popup__field--message" name="message" id="message" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="popup__btn popup__btn--send  btn" type="submit">Отправить</button>
+    </form>
+  </div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeSGVFYxJS5oY61DksVooEzgj_jdE-ItE&callback=initMap"
+  async defer></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/popup.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+
+</body>
+
+</html>

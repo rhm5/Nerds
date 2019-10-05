@@ -1,0 +1,28 @@
+.paginator {
+  font-size: 0;
+}
+
+.paginator__link {
+  .def-ib();
+  margin-right: 10px;
+  padding: 10px 16px;
+  border-radius: 3px;
+  background: @additionalBack3;
+  color: @secondaryColor;
+  .font(shortest; 12px; 18px);
+  text-transform: uppercase;
+  &--current {
+    box-shadow: inset 0 0 0 2px @additionalBack3;
+    background: @primaryBack;
+    &:hover {
+      background: none;
+    }
+    &:active {
+      background: none;
+      box-shadow: inset 0 0 0 2px @additionalBack3;
+    }
+  }
+  &--next {
+    padding: 10px 30px;
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML Academy, Nerds, NЁRDS DESIGN STUDIO,
+  студия, клиенты, магазин, дизайн, долго, дорого, скрупулезно, веб-сайты, приложения,
+  презентации, сайт, сайты">
+  <meta name="description" content="Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.">
+  <meta name="author" content="RHM">
+  <meta name="viewport" content="width=900">
+  <title>Nerds</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/popup1.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__subwrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo.png" width="139" height="56" alt="Nerds">
+        </a>
+        <div class="page-header__nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item  nav__item--active"><a href="#">Студия</a></li>
+              <li class="nav__item"><a href="#">Клиенты</a></li>
+              <li class="nav__item"><a href="catalog.html">Магазин</a></li>
+              <li class="nav__item"><a href="#map">Контакты</a></li>
+              <li class="nav__item  nav__item--cart"><a href="#">
+                  <svg class="nav__icon-svg  nav__icon-svg--cart">
+                    <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart-black2"></use>
+                  </svg>
+                  Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <div class="page-header__slider slider">
+        <input class="slider__switch" type="radio" name="toggles" id="toggle-1" checked>
+        <input class="slider__switch" type="radio" name="toggles" id="toggle-2">
+        <input class="slider__switch" type="radio" name="toggles" id="toggle-3">
+        <div class="slider__toggles">
+          <label class="slider__toggle" for="toggle-1"></label>
+          <label class="slider__toggle" for="toggle-2"></label>
+          <label class="slider__toggle" for="toggle-3"></label>
+        </div>
+
+        <div class="slider__items">
+          <section class="slider__item  slider__item--comp">
+            <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
+            <p class="slider__descr">
+              Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+            </p>
+            <a class="slider__btn  btn" href="#description">Узнать больше</a>
+          </section>
+
+          <section class="slider__item  slider__item--calc">
+            <h3 class="slider__title  slider__title--long">Любите ли вы математику, как любим ее мы?</h3>
+            <p class="slider__descr">
+              Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.
+            </p>
+            <a class="slider__btn  btn" href="#description">Узнать больше</a>
+          </section>
+
+          <section class="slider__item  slider__item--robo">
+            <h3 class="slider__title">Только наркотики, только хардкор!</h3>
+            <p class="slider__descr">
+              Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.
+            </p>
+            <a class="slider__btn  btn" href="#description">Узнать больше</a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <section class="offers">
+        <h2 class="visually-hidden">Наши предложения</h2>
+        <section class="offers__item">
+          <img class="offers__img" src="img/offer-1.png" width="240" height="124" alt="Разработка веб-сайтов">
+          <h2 class="offers__title">Веб-сайты</h2>
+          <p class="offers__descr">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="offers__btn  btn  btn--red" href="#">Заказать</a>
+        </section>
+
+        <section class="offers__item">
+          <img class="offers__img" src="img/offer-2.png" width="240" height="124" alt="Разработка приложений">
+          <h2 class="offers__title">Приложения</h2>
+          <p class="offers__descr offers__descr--short">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="offers__btn  btn  btn--green" href="#">Заказать</a>
+        </section>
+
+        <section class="offers__item">
+          <img class="offers__img" src="img/offer-3.png" width="240" height="124" alt="Разработка презентаций">
+          <h2 class="offers__title">Презентации</h2>
+          <p class="offers__descr">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="offers__btn  btn  btn--yellow" href="#">Заказать</a>
+        </section>
+      </section>
+
+
+
+
+      <section class="description" id="description">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="description__column description__column--left">
+          <h2 class="description__slogan">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p class="description__descr">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <h4 class="description__title">Выполняем заказы на разработку:</h4>
+          <ul class="description__list">
+            <li class="description__item">Веб-сайтов любой сложности</li>
+            <li class="description__item">Мобильных приложений для iOS и Android</li>
+            <li class="description__item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+
+        <div class="description__column  description__column--right">
+          <figure class="description__figure">
+            <img class="description__logo" src="img/logo-small.png" width="187" height="75" alt="Nerds">
+            <figcaption class="description__date">Since 2004</figcaption>
+          </figure>
+          <h4 class="description__title">Как мы работаем</h4>
+          <ul class="description__list">
+            <li class="description__item">С самоотдачей 146%</li>
+            <li class="description__item">Соблюдая сроки на 100%</li>
+            <li class="description__item">По предоплате 50%</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="partners" id="clients">
+        <h2 class="visually-hidden">Наши партнеры</h2>
+        <a class="partners__item" href="#" target="blank">
+          <img src="img/partner-1.png" width="198" height="37" alt="GLUKHANKO">
+        </a>
+
+        <a class="partners__item" href="https://htmlacademy.ru/" target="blank">
+          <img src="img/partner-2.png" width="199" height="68" alt="HTML Academy">
+        </a>
+
+        <a class="partners__item" href="#" target="blank">
+          <img src="img/partner-3.png" width="209" height="90" alt="Barbershop Borodinski">
+        </a>
+      </section>
+    </div>
+  </main>
+
+
+
+  <footer class="page-footer">
+    <section class="map">
+      <div class="map__api" id="map"></div>
+      <div class="map__wrapper">
+        <div class="map__contacts">
+          <h5 class="map__title">Nёrds design studio</h5>
+          <p class="map__descr">
+            191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map__descr"> тел. +7(812)275-75-75</p>
+          <a class="map__btn btn btn--popup" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="page-footer__wrapper">
+      <section class="page-footer__social  social">
+        <a class="social__btn" href="#">В контакте
+          <svg class="social__icon-svg  social__icon-svg--vk">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
+        <a class="social__btn" href="#">Фейсбук
+          <svg class="social__icon-svg  social__icon-svg--fb">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="social__btn" href="#">Инстаграм
+          <svg class="social__icon-svg  social__icon-svg--inst">
+            <use xmlns:xlink="http://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </section>
+
+      <section class="page-footer__promo">
+        <h4 class="page-footer__title">Давайте дружить, это выгодно!</h4>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+
+
+
+  <div class="popup">
+    <button class="popup__btn popup__btn--close btn  btn--close" type="button">Закрыть</button>
+    <form class="popup-form" action="#" method="post">
+      <div class="popup__group  popup__group--name">
+        <label class="popup__label" for="name">Ваше имя:</label>
+        <input class="popup__field" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+
+      <div class="popup__group popup__group--email">
+        <label class="popup__label" for="email">Ваш e-mail:</label>
+        <input class="popup__field" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </div>
+
+      <div class="popup__group popup__group--message">
+        <label class="popup__label" for="message">Текст письма:</label>
+        <textarea class="popup__field popup__field--message" name="message" id="message" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="popup__btn popup__btn--send  btn" type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeSGVFYxJS5oY61DksVooEzgj_jdE-ItE&callback=initMap"
+  async defer></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.slider  {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__switch {
+  display: none;
+}
+
+.slider__items {
+  display: flex;
+  width: 300%;
+  transition: transform 500ms ease;
+}
+
+.slider__item {
+  width: 33.33333333%;
+  min-height: 347px;
+  padding-top: 68px;
+  &--comp {
+    background: url("../img/slider-bg-1.png") no-repeat 100% 47px;
+  }
+  &--calc {
+    background: url("../img/slider-bg-2.png") no-repeat 100%;
+  }
+  &--robo {
+    background: url("../img/slider-bg-3.png") no-repeat 100% 100%;
+  }
+}
+
+.slider__title {
+  width: 320px;
+  margin-bottom: 18px;
+  .font(short; 36px; 36px);
+  &--long {
+    width: 470px;
+  }
+}
+
+.slider__descr {
+  width: 470px;
+  margin-bottom: 27px;
+}
+
+.slider__btn {
+  width: 240px;
+}
+
+.slider__toggles {
+  position: absolute;
+  bottom: 27%;
+  left: 50%;
+  z-index: 2;
+  width: 60px;
+  height: 10px;
+  text-align: center;
+  transform: translate(-50%);
+  label {
+    .def-ib();
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border: 3px solid @primaryBack;
+    border-radius: 50%;
+    background: @primaryBack;
+    transition: 700ms border-color;
+    cursor: pointer;
+    &:hover {
+      border-color: @gray3;
+    }
+  }
+}
+
+#toggle-1:checked ~ .slider__toggles label[for="toggle-1"],
+#toggle-2:checked ~ .slider__toggles label[for="toggle-2"],
+#toggle-3:checked ~ .slider__toggles label[for="toggle-3"] {
+  background: @gray3;
+}
+
+#toggle-1:checked ~ .slider__items {
+  transform: translate(0);
+}
+#toggle-2:checked ~ .slider__items {
+  transform: translate(-33.333333%);
+}
+#toggle-3:checked ~ .slider__items {
+  transform: translate(-66.666666%);
+}
