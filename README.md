@@ -1,6 +1,6 @@
 # Nerds
 
-* Сайт: [Nerds](https://rhm5.github.io/Nerds/)
+* Сайт: [Nerds](https://5rhm5.gitlab.io/nerds/)
 * Дизайн: [HTML Academy](https://htmlacademy.ru/)
 
 ## Описание
